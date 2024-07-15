@@ -1,3 +1,4 @@
+/* styles/globals.css */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
@@ -16,19 +17,19 @@ body {
 
 @layer utilities {
   .btn_white { 
-    @apply  border-white bg-white px-8 py-3 text-green-50
+    @apply border-white bg-white px-8 py-3 text-green-50;
   }
   .btn_white_text  { 
-    @apply  border-white bg-white px-8 py-3 text-gray-90
+    @apply border-white bg-white px-8 py-3 text-gray-900;
   }
   .btn_green  { 
-    @apply  border-green-50 bg-green-50 px-8 py-5 text-white
+    @apply border-green-50 bg-green-500 px-8 py-5 text-white;
   }
   .btn_dark_green { 
-    @apply  bg-green-900 px-8 py-4 text-white transition-all hover:bg-black
+    @apply bg-green-900 px-8 py-4 text-white transition-all hover:bg-black;
   }
   .btn_dark_green_outline  { 
-    @apply border-gray-20 bg-green-90 px-8 py-5 text-white
+    @apply border-gray-20 bg-green-90 px-8 py-5 text-white;
   }
   
   .max-container {
@@ -109,7 +110,7 @@ body {
   }
 
   .bold-32 {
-    @apply text-[32px] font-[700] leading-[120%];
+    @apply text-[32px] font-[700];
   }
 
   .bold-20 {
@@ -124,9 +125,14 @@ body {
     @apply text-[16px] font-[700];
   }
 
+  /* Custom Utility Classes */
+  .bg-pattern-2 {
+    background-image: url('../public/pattern-bg.png'); /* Replace with your actual image path */
+  }
+
   /* Hero */
   .hero-map {
-    @apply absolute right-0 top-0 h-screen w-screen bg-pattern-2 bg-cover bg-center md:-right-28 xl:-top-60;
+    @apply absolute right-0 top-0 h-screen w-screen bg-pattern-2 bg-cover bg-center md:-right-28 lg:-top-60;
   }
 
   /* Camp */
@@ -136,12 +142,12 @@ body {
 
   /* Feature */
   .feature-phone {
-    @apply absolute top-[13%] z-10 hidden max-w-[1500px] rotate-[15deg] md:-left-16 lg:flex  3xl:left-20;
+    @apply absolute top-[13%] z-10 hidden max-w-[1500px] rotate-[15deg] md:-left-16 lg:flex 3xl:left-20;
   }
 
   /* Get App */
   .get-app {
-    @apply max-container relative flex w-full  flex-col justify-between gap-32 overflow-hidden bg-green-90 bg-pattern bg-cover bg-center bg-no-repeat px-6 py-12 text-white sm:flex-row sm:gap-12 sm:py-24 lg:px-20 xl:max-h-[598px] 2xl:rounded-5xl;
+    @apply max-container relative flex w-full flex-col justify-between gap-32 overflow-hidden bg-green-90 bg-pattern bg-cover bg-center bg-no-repeat px-6 py-12 text-white sm:flex-row sm:gap-12 sm:py-24 lg:px-20 xl:max-h-[598px] 2xl:rounded-5xl;
   }
 }
 
