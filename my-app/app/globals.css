@@ -25,7 +25,7 @@ body {
     @apply  border-green-50 bg-green-50 px-8 py-5 text-white
   }
   .btn_dark_green { 
-    @apply  bg-green-90 px-8 py-4 text-white transition-all hover:bg-black
+    @apply  bg-green-900 px-8 py-4 text-white transition-all hover:bg-black
   }
   .btn_dark_green_outline  { 
     @apply border-gray-20 bg-green-90 px-8 py-5 text-white
