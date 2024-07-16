@@ -6,7 +6,7 @@ import Button from '../components/Button'
 
 const Hero = () => {
   return (
-    <section className='max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row border-2'>
+    <section className='max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row '>
       <div className='hero-map'></div>
 
       <div className='relative z-20 flex flex-1 flex-col xl:w-1/2'>
@@ -59,9 +59,34 @@ const Hero = () => {
              type ="button" 
             title="How we work"
             icon='/play.svg'
-            variant="btn_white_text"/>
+            variant="btn_white_text"
+            />
             
         </div>
+      </div>
+
+      <div className='relative flex flex-1 items-start
+      '>
+        <div className='relative z-20 w-[268px]
+        flex-col gap-8 rounded-3xl bg-green-950 px-7 py-8'>
+            <div className='flex flex-col'>
+                <div className='flex items-center justify-between'>
+                    <p className='regular-16 text-gray-400'>Location</p>
+                    <Image src='/close.svg' alt='close' width={24} height={24}/>
+
+                </div>
+                <p className='bold-20 text-white'>Nyanza_Rukali</p>
+                <div className='flex items-center justify-between'>
+                   <div className='flex flex-col'>
+                    <p className='regular-16 font-semibold block text-gray-400'>Distance</p>
+                    <p className='bold-20 text-white'>173.28 mi</p>
+
+                   </div>
+
+                </div>
+            </div>
+        </div>
+
       </div>
     </section>
   )
