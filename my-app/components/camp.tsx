@@ -30,8 +30,8 @@ const camp = () => {
       title="Putuk Truno Camp"
       subtitle="Prigen , Pasuruan"
       peopleJoined="50+ Joined"/>
-
-      <CampSite/>
+{/* 
+      <CampSite/> */}
 
 
     </div>
