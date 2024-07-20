@@ -2,6 +2,7 @@ import Hero from '../components/Hero'
 import Camp from '../components/camp'
 import Guide from '../components/Guide'
 import Features from '@/components/features';
+import Getapp from '@/components/Getapp';
 
 export default function Home() {
   return (
@@ -10,6 +11,8 @@ export default function Home() {
    <Camp></Camp>
    <Guide></Guide>
    <Features/>
+   <Getapp/>
+
    </>
   );
 }
